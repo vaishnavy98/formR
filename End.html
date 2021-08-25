@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color:  #999966}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+    </style>
+</head>
+<body>
+<h1>Success Fully Done</h1>
+<table border="collapse" width="100%">
+    <tr>
+        <th>Assembly Constiturncy </th>
+        <th>Political Party</th>
+        <th>Candidate Name</th>
+        <th>Father Name</th>
+        <th>Candidate's S.No</th>
+        <th>Occupation</th>
+        <th>Contact Number</th>
+        <th>Postal Addres</th>
+        <th>State</th>
+        <th>District</th>
+        <th>Position</th>
+        <th>Annual Incom</th>
+<!--        <th>Date of Reg</th>-->
+    </tr>
+    {%for iterm in register%}
+    <tr>
+        <td>{{iterm.ACname}}</td>
+        <td>{{iterm.PP}}</td>
+        <td>{{iterm.Cname}}</td>
+        <td>{{iterm.Fname}}</td>
+        <td>{{iterm.CNum}}</td>
+        <td>{{iterm.Buss}}</td>
+        <td>{{iterm.mobli}}</td>
+        <td>{{iterm.PA}}</td>
+        <td>{{iterm.state}}</td>
+        <td>{{iterm.distric}}</td>
+        <td>{{iterm.posi}}</td>
+        <td>{{iterm.incom}}</td>
+<!--        <td>{{iterm.Date}}</td>-->
+    </tr>
+    {%endfor%}
+</table>
+</body>
+</html>
